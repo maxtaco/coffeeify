@@ -1,4 +1,4 @@
-var coffee = require('coffee-script');
+var coffee = require('iced-coffee-script');
 var through = require('through');
 var convert = require('convert-source-map');
 
@@ -13,7 +13,7 @@ function compile(file, data) {
 }
 
 function isCoffee (file) {
-    return /\.((lit)?coffee|coffee\.md)$/.test(file);
+    return /\.((lit)?coffee|coffee\.md|iced)$/.test(file);
 }
 
 function isLiterate (file) {

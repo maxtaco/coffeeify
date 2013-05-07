@@ -6,7 +6,7 @@ mix and match `.coffee` and `.js` files in the same project
 
 **important: when using require('path/to/file.coffee') remember to use .coffee extension**
 
-[![build status](https://secure.travis-ci.org/substack/coffeeify.png)](http://travis-ci.org/substack/coffeeify)
+[![build status](https://secure.travis-ci.org/substack/coffeeify.png)](http://travis-ci.org/maxtacp/icsify)
 
 # example
 
