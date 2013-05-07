@@ -1,10 +1,10 @@
 {
     "name": "icsify",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "browserify v2 plugin for iced-coffee-script with support for mixed .js, .iced and .coffee files",
     "main": "index.js",
     "dependencies": {
-        "iced-coffee-script": "~1.6.2a",
+        "iced-coffee-script": "1.6.2",
         "through": "~2.2.0",
         "convert-source-map": "~0.2.1"
     },
