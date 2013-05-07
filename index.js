@@ -3,7 +3,7 @@ var through = require('through');
 var convert = require('convert-source-map');
 
 function compile(file, data) {
-    var compiled = coffee.compile(data, { sourceMap: true, generatedFile: file, inline: true, literate: isLiterate(file) });
+    var compiled = coffee.compile(data, { sourceMap: true, generatedFile: file, inline: true, literate: isLiterate(file), runtime : 'browserify' });
     var comment = convert
         .fromJSON(compiled.v3SourceMap)
         .setProperty('sources', [ file ])
