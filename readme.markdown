@@ -1,16 +1,16 @@
 # coffeeify
 
-browserify v2 plugin for coffee-script
+browserify v2 plugin for iced-coffee-script
 
-mix and match `.coffee` and `.js` files in the same project
+mix and match `.coffee`, `iced`, and `.js` files in the same project
 
-**important: when using require('path/to/file.coffee') remember to use .coffee extension**
+**important: when using require('path/to/file.iced') remember to use .iced extension**
 
 [![build status](https://secure.travis-ci.org/substack/coffeeify.png)](http://travis-ci.org/maxtacp/icsify)
 
 # example
 
-given some files written in a mix of `js` and `coffee`:
+given some files written in a mix of `js` `coffee`, and `iced`:
 
 foo.coffee:
 
@@ -21,10 +21,10 @@ console.log(require './bar.js')
 bar.js:
 
 ``` js
-module.exports = require('./baz.coffee')(5)
+module.exports = require('./baz.iced')(5)
 ```
 
-baz.coffee:
+baz.iced:
 
 ``` js
 module.exports = (n) -> n * 111
@@ -36,10 +36,10 @@ install coffeeify into your app:
 $ npm install coffeeify
 ```
 
-when you compile your app, just pass `-t coffeeify` to browserify:
+when you compile your app, just pass `-t icsify` to browserify:
 
 ```
-$ browserify -t coffeeify foo.coffee > bundle.js
+$ browserify -t icsify foo.coffee > bundle.js
 $ node bundle.js
 555
 ```
@@ -56,7 +56,3 @@ npm install icsify
 
 MIT
 
-# maintainers wanted
-
-I am not a coffee-script user so if you use this plugin regularly and want to
-take it over I will gladly add you as a maintainer on npm.
