@@ -12,6 +12,7 @@ function bundle (file) {
         b.bundle(function (err, src) {
             if (err) t.fail(err);
             vm.runInNewContext(src, {
+                setTimeout : setTimeout,
                 console: { log: log }
             });
         });
@@ -25,3 +26,4 @@ function bundle (file) {
 bundle('/../example/foo.coffee');
 bundle('/../example/foo.litcoffee');
 bundle('/../example/foo.iced');
+bundle('/../example/foo2.iced');
