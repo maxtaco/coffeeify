@@ -4,7 +4,7 @@
     "description": "browserify v2 plugin for iced-coffee-script with support for mixed .js, .iced and .coffee files",
     "main": "index.js",
     "dependencies": {
-        "iced-coffee-script": ">=1.6.3-a",
+        "iced-coffee-script": "~1.7.1",
         "through": "~2.2.0",
         "convert-source-map": "~0.2.1"
     },
