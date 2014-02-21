@@ -1,37 +1,37 @@
 {
-    "name": "icsify",
-    "version": "0.0.5",
-    "description": "browserify v2 plugin for iced-coffee-script with support for mixed .js, .iced and .coffee files",
-    "main": "index.js",
-    "dependencies": {
-        "iced-coffee-script": "~1.7.1",
-        "through": "~2.2.0",
-        "convert-source-map": "~0.2.1"
-    },
-    "devDependencies": {
-        "tap": "~0.4.0",
-        "browserify": "~2.4.0"
-    },
-    "scripts": {
-        "test": "tap test/*.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/maxtaco/icsify.git"
-    },
-    "homepage": "https://github.com/maxtaco/icsify",
-    "keywords": [
-        "iced-coffee-script",
-        "coffee-script",
-        "browserify",
-        "v2",
-        "js",
-        "plugin",
-        "transform"
-    ],
-    "author": {
-        "name": "Max Krohn",
-        "email": "themax@gmail.com"
-    },
-    "license": "MIT"
+  "name": "icsify",
+  "version": "0.0.6",
+  "description": "browserify v2 plugin for iced-coffee-script with support for mixed .js, .iced and .coffee files",
+  "main": "index.js",
+  "dependencies": {
+    "iced-coffee-script": "~1.7.1",
+    "through": "~2.2.0",
+    "convert-source-map": "~0.2.1"
+  },
+  "devDependencies": {
+    "tap": "~0.4.0",
+    "browserify": "~2.4.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxtaco/icsify.git"
+  },
+  "homepage": "https://github.com/maxtaco/icsify",
+  "keywords": [
+    "iced-coffee-script",
+    "coffee-script",
+    "browserify",
+    "v2",
+    "js",
+    "plugin",
+    "transform"
+  ],
+  "author": {
+    "name": "Max Krohn",
+    "email": "themax@gmail.com"
+  },
+  "license": "MIT"
 }
