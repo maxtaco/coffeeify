@@ -1,9 +1,12 @@
-var coffee = require('coffee-script');
+var iced = require('iced-coffee-script');
 var through = require('through');
 var convert = require('convert-source-map');
 
 function isCoffee (file) {
     return (/\.((lit)?coffee|coffee\.md)$/).test(file);
+}
+function isIced (file) {
+    return (/\.(iced)$/).test(file);
 }
 
 function isLiterate (file) {
@@ -45,7 +48,7 @@ ParseError.prototype.inspect = function () {
 function compile(file, data, callback) {
     var compiled;
     try {
-        compiled = coffee.compile(data, {
+        compiled = iced.compile(data, {
             sourceMap: true,
             generatedFile: file,
             inline: true,
@@ -67,8 +70,8 @@ function compile(file, data, callback) {
     callback(null, compiled.js + '\n' + map.toComment());
 }
 
-function coffeeify(file) {
-    if (!isCoffee(file)) return through();
+function icsify(file) {
+    if (!isCoffee(file) && !isIced(file)) return through();
 
     var data = '', stream = through(write, end);
 
@@ -87,8 +90,9 @@ function coffeeify(file) {
     }
 }
 
-coffeeify.compile = compile;
-coffeeify.isCoffee = isCoffee;
-coffeeify.isLiterate = isLiterate;
+icsify.compile = compile;
+icsify.isCoffee = isCoffee;
+icsify.isIced = isIced;
+icsify.isLiterate = isLiterate;
 
-module.exports = coffeeify;
+module.exports = icsify;

@@ -1,10 +1,10 @@
 {
-    "name": "coffeeify",
+    "name": "icsify",
     "version": "0.6.0",
-    "description": "browserify v2 plugin for coffee-script with support for mixed .js and .coffee files",
+    "description": "browserify v2 plugin for iced-coffee-script with support for mixed .js and .iced files",
     "main": "index.js",
     "dependencies": {
-        "coffee-script": "~1.7.0",
+        "iced-coffee-script": "~1.7.1-a",
         "through": "~2.3.4",
         "convert-source-map": "~0.3.3"
     },
@@ -17,16 +17,17 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/jnordberg/coffeeify.git"
+        "url": "git://github.com/maxtaco/icsify.git"
     },
-    "homepage": "https://github.com/jnordberg/coffeeify",
+    "homepage": "https://github.com/maxtaco/icsify",
     "keywords": [
         "coffee-script",
         "browserify",
         "v2",
         "js",
         "plugin",
-        "transform"
+        "transform",
+        "browserify-transform"
     ],
     "contributors": [
         {
@@ -38,6 +39,11 @@
             "name": "Johan Nordberg",
             "email": "code@johan-nordberg.com",
             "url": "http://johan-nordberg.com"
+        },
+        {
+            "name": "Max Krohn",
+            "email": "themax@gmail.com",
+            "url": "https://keybase.io/max"
         }
     ],
     "license": "MIT"
