@@ -53,7 +53,8 @@ function compile(file, data, callback) {
             generatedFile: file,
             inline: true,
             bare: true,
-            literate: isLiterate(file)
+            literate: isLiterate(file),
+            runtime : 'browserify'
         });
     } catch (e) {
         var error = e;
